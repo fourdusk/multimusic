@@ -8,9 +8,7 @@ function removeUrls(config, cancel) {
   let url = config.url + '&' + config.method
   if (urls.indexOf(url) !== -1) {
     if (cancel) {
-      cancel('remove request').catch(error => {
-        console.log(error)
-      })
+      cancel('remove request')
     } else {
       urls.splice(urls.indexOf(url), 1)
     }
