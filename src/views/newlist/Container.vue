@@ -88,21 +88,21 @@
                     <v-icon color="cyan">mdi-volume-high</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title class="cyan--text">{{
-                      song.songname
-                    }}</v-list-tile-title>
-                    <v-list-tile-sub-title class="cyan--text">
-                      {{ song.artist }}
-                    </v-list-tile-sub-title>
+                    <v-list-tile-title class="cyan--text">
+                      {{ song.songname }}
+                    </v-list-tile-title>
+                    <v-list-tile-sub-title class="cyan--text">{{
+                      song.artist
+                    }}</v-list-tile-sub-title>
                   </v-list-tile-content>
                 </template>
                 <template v-else>
                   <v-list-tile-action>{{ index + 1 }}</v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>{{ song.songname }}</v-list-tile-title>
-                    <v-list-tile-sub-title>
-                      {{ song.artist }}
-                    </v-list-tile-sub-title>
+                    <v-list-tile-sub-title>{{
+                      song.artist
+                    }}</v-list-tile-sub-title>
                   </v-list-tile-content>
                 </template>
                 <v-list-tile-action>
@@ -127,6 +127,9 @@
 <script>
 import { mapGetters } from 'vuex'
 import api from './../../api'
+import netease from '../../assets/netease.jpg'
+import qq from '../../assets/qq.jpg'
+import kugou from '../../assets/kugou.jpg'
 
 export default {
   created() {
@@ -201,23 +204,20 @@ export default {
           text: '网易云音乐',
           style:
             this.activeType === 'netease' ? 'cyan--text font-weight-bold' : '',
-          src:
-            'https://wx4.sinaimg.cn/large/0068bOvsgy1g3cdvv4angj303k03kq2u.jpg'
+          src: netease
         },
         {
           type: 'qq',
           text: 'QQ音乐',
           style: this.activeType === 'qq' ? 'cyan--text font-weight-bold' : '',
-          src:
-            'https://ws2.sinaimg.cn/large/0068bOvsgy1g3cdvuxnohj303k03ka9x.jpg'
+          src: qq
         },
         {
           type: 'kugou',
           text: '酷狗音乐',
           style:
             this.activeType === 'kugou' ? 'cyan--text font-weight-bold' : '',
-          src:
-            'https://wx4.sinaimg.cn/large/0068bOvsgy1g3cdvuzwr3j303k03kt8m.jpg'
+          src: kugou
         }
       ]
     },

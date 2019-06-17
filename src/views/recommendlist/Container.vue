@@ -68,6 +68,9 @@
 <script>
 import { mapGetters } from 'vuex'
 import RecommendList from './List'
+import netease from '../../assets/netease.jpg'
+import qq from '../../assets/qq.jpg'
+import kugou from '../../assets/kugou.jpg'
 
 export default {
   components: {
@@ -147,23 +150,20 @@ export default {
           text: '网易云音乐',
           style:
             this.activeType === 'netease' ? 'cyan--text font-weight-bold' : '',
-          src:
-            'https://wx4.sinaimg.cn/large/0068bOvsgy1g3cdvv4angj303k03kq2u.jpg'
+          src: netease
         },
         {
           type: 'qq',
           text: 'QQ音乐',
           style: this.activeType === 'qq' ? 'cyan--text font-weight-bold' : '',
-          src:
-            'https://ws2.sinaimg.cn/large/0068bOvsgy1g3cdvuxnohj303k03ka9x.jpg'
+          src: qq
         },
         {
           type: 'kugou',
           text: '酷狗音乐',
           style:
             this.activeType === 'kugou' ? 'cyan--text font-weight-bold' : '',
-          src:
-            'https://wx4.sinaimg.cn/large/0068bOvsgy1g3cdvuzwr3j303k03kt8m.jpg'
+          src: kugou
         }
       ]
     }
