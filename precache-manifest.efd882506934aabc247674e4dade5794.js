@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/multimusic/js/recommendlist.3daf2338.js"
   },
   {
-    "revision": "804d0a4ab81df1212630",
-    "url": "/multimusic/js/app.b5c4cb05.js"
+    "revision": "74a9a2cbf110f21406f2",
+    "url": "/multimusic/js/app.5c10c45e.js"
   },
   {
     "revision": "3c2febb6ccc0dfbf04a6",
@@ -56,11 +56,11 @@ self.__precacheManifest = [
     "url": "/multimusic/img/materialdesignicons-webfont.032eb679.svg"
   },
   {
-    "revision": "4d66d06f8060a424c013fef5a4d9431b",
+    "revision": "e721d1b678158663b146d82a5ba4b550",
     "url": "/multimusic/index.html"
   },
   {
-    "revision": "804d0a4ab81df1212630",
+    "revision": "74a9a2cbf110f21406f2",
     "url": "/multimusic/css/app.7d53bfdc.css"
   }
 ];
