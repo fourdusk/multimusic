@@ -1,5 +1,5 @@
 {
-  "name": "mkugou",
+  "name": "multimusci",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,13 +10,19 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
+    "vue-awesome-swiper": "^3.1.3",
     "vue-router": "^3.0.1",
+    "vuetify": "^1.5.11",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@mdi/font": "^3.5.95",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-e2e-cypress": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
@@ -31,6 +37,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-axios": "0.0.4",
     "vue-template-compiler": "^2.5.21"
   }
 }
