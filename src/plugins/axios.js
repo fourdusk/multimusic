@@ -22,29 +22,19 @@ function removeUrls(config, cancel) {
 /**
  * axios 请求拦截器处理请求数据
  */
-axios.interceptors.request.use(
-  config => {
-    config.cancelToken = new CancelToken(cancel => {
-      removeUrls(config, cancel)
-    })
-    return config
-  },
-  error => {
-    return Promise.reject(error)
-  }
-)
+axios.interceptors.request.use(config => {
+  config.cancelToken = new CancelToken(cancel => {
+    removeUrls(config, cancel)
+  })
+  return config
+})
 
 /**
  * axios 响应拦截器处理响应数据
  */
-axios.interceptors.response.use(
-  response => {
-    removeUrls(response.config)
-    return response
-  },
-  error => {
-    return Promise.reject(error)
-  }
-)
+axios.interceptors.response.use(response => {
+  removeUrls(response.config)
+  return response
+})
 
 Vue.prototype.$axios = axios
