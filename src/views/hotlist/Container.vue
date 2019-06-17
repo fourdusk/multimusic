@@ -133,24 +133,29 @@ import kugou from '../../assets/kugou.jpg'
 
 export default {
   created() {
-    api[this.activeType].getHotList().then(response => {
-      let list = response.data.data.list
-      this.songs = list.songs.map(value => {
-        for (let v in value) {
-          if (v === 'artist') {
-            value.artist = value.artist.join(' / ')
-            break
+    api[this.activeType]
+      .getHotList()
+      .then(response => {
+        let list = response.data.data.list
+        this.songs = list.songs.map(value => {
+          for (let v in value) {
+            if (v === 'artist') {
+              value.artist = value.artist.join(' / ')
+              break
+            }
           }
-        }
-        return value
+          return value
+        })
+        this.songscount = list.songs.length
+        this.listcover = list.listcover
+        this.listname = list.listname
+        this.creatorname = list.creatorname
+        this.creatoravatar = list.creatoravatar
+        this.listdescription = list.listdescription
       })
-      this.songscount = list.songs.length
-      this.listcover = list.listcover
-      this.listname = list.listname
-      this.creatorname = list.creatorname
-      this.creatoravatar = list.creatoravatar
-      this.listdescription = list.listdescription
-    })
+      .catch(error => {
+        console.log(error)
+      })
   },
   data() {
     return {
@@ -268,20 +273,25 @@ export default {
     activeType: function() {
       this.songscount = 0
       this.songs.length = 0
-      api[this.activeType].getHotList().then(response => {
-        let list = response.data.data.list
-        this.songs = list.songs.map(value => {
-          for (let v in value) {
-            if (v === 'artist') {
-              value.artist = value.artist.join(' / ')
+      api[this.activeType]
+        .getHotList()
+        .then(response => {
+          let list = response.data.data.list
+          this.songs = list.songs.map(value => {
+            for (let v in value) {
+              if (v === 'artist') {
+                value.artist = value.artist.join(' / ')
+              }
             }
-          }
-          return value
+            return value
+          })
+          this.songscount = list.songs.length
+          this.listcover = list.listcover
+          this.listname = list.listname
         })
-        this.songscount = list.songs.length
-        this.listcover = list.listcover
-        this.listname = list.listname
-      })
+        .catch(error => {
+          console.log(error)
+        })
     }
   }
 }
