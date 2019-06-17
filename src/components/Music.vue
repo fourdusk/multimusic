@@ -20,9 +20,9 @@
                   <v-flex xs8 class="text-truncate">
                     <v-layout wrap fill-height align-content-space-around>
                       <v-flex xs12 class="text-truncate">{{ songname }}</v-flex>
-                      <v-flex xs12 class="caption text-truncate grey--text">
-                        {{ artist }}
-                      </v-flex>
+                      <v-flex xs12 class="caption text-truncate grey--text">{{
+                        artist
+                      }}</v-flex>
                     </v-layout>
                   </v-flex>
                 </v-layout>
@@ -40,9 +40,9 @@
                     <v-flex>
                       <v-layout wrap>
                         <v-flex xs12>{{ songname }}</v-flex>
-                        <v-flex xs12 class="grey--text caption">
-                          {{ artist }}
-                        </v-flex>
+                        <v-flex xs12 class="grey--text caption">{{
+                          artist
+                        }}</v-flex>
                       </v-layout>
                     </v-flex>
                   </v-layout>
@@ -195,9 +195,9 @@
                           <v-list-tile-title>
                             {{ v.name }}
                             <span class="caption grey--text px-2">-</span>
-                            <span class="caption grey--text">
-                              {{ v.artist }}
-                            </span>
+                            <span class="caption grey--text">{{
+                              v.artist
+                            }}</span>
                           </v-list-tile-title>
                         </v-list-tile-content>
                         <v-list-tile-action @click.stop="removeOne(v.id)">
@@ -500,7 +500,7 @@ export default {
             }
           }
         })
-        .catch(error => console.log(error))
+        .catch(error => error)
     },
     // 播放上一首歌曲
     playPrevMusic() {

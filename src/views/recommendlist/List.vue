@@ -19,9 +19,9 @@
             }"
           >
             <v-img :src="value.listcover" style="border-radius: 4%;"></v-img>
-            <v-card-title class="caption px-0 text-truncate">
-              {{ value.listname }}
-            </v-card-title>
+            <v-card-title class="caption px-0 text-truncate">{{
+              value.listname
+            }}</v-card-title>
           </v-card>
         </v-flex>
       </v-layout>
@@ -96,9 +96,7 @@ export default {
           this.loading = false
           this.page++
         })
-        .catch(error => {
-          console.log(error)
-        })
+        .catch(error => error)
     }
   }
 }

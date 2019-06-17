@@ -33,9 +33,9 @@
                         height="24"
                         style="border-radius:50%;vertical-align:middle;"
                       />
-                      <span class="pl-2 caption grey--text">{{
-                        creatorname
-                      }}</span>
+                      <span class="pl-2 caption grey--text">
+                        {{ creatorname }}
+                      </span>
                     </v-flex>
                     <v-flex>
                       <v-tooltip bottom max-width="300px">
@@ -95,21 +95,21 @@
                     <v-icon color="cyan">mdi-volume-high</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title class="cyan--text">{{
-                      song.songname
-                    }}</v-list-tile-title>
-                    <v-list-tile-sub-title class="cyan--text">
-                      {{ song.artist }}
-                    </v-list-tile-sub-title>
+                    <v-list-tile-title class="cyan--text">
+                      {{ song.songname }}
+                    </v-list-tile-title>
+                    <v-list-tile-sub-title class="cyan--text">{{
+                      song.artist
+                    }}</v-list-tile-sub-title>
                   </v-list-tile-content>
                 </template>
                 <template v-else>
                   <v-list-tile-action>{{ index + 1 }}</v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>{{ song.songname }}</v-list-tile-title>
-                    <v-list-tile-sub-title>
-                      {{ song.artist }}
-                    </v-list-tile-sub-title>
+                    <v-list-tile-sub-title>{{
+                      song.artist
+                    }}</v-list-tile-sub-title>
                   </v-list-tile-content>
                 </template>
                 <v-list-tile-action>
@@ -157,7 +157,7 @@ export default {
         this.creatoravatar = list.creatoravatar
         this.listdescription = list.listdescription
       })
-      .catch(error => console.log(error))
+      .catch(error => error)
     this.$emit('addArrow', true)
   },
   beforeDestroy() {
