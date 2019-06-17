@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["notfound"],{be4d:function(t,e,n){"use strict";n.r(e);var s=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("v-layout",{attrs:{"justify-center":""}},[n("v-flex",{staticClass:"text-xs-center title",attrs:{xs12:""}},[t._v("页面走丢了~")])],1)},a=[],l={name:"NotFound"},u=l,o=n("2877"),r=Object(o["a"])(u,s,a,!1,null,null,null);e["default"]=r.exports}}]);
+//# sourceMappingURL=notfound.8bece264.js.map
