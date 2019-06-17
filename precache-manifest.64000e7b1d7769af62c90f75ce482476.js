@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "3968d17ebbdb0b121e7b",
-    "url": "/multimusic/js/songlist.6d0f95bf.js"
+    "revision": "d4f504519f98a4432be8",
+    "url": "/multimusic/js/songlist.26e8e9ca.js"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/multimusic/js/notfound.8bece264.js"
   },
   {
-    "revision": "367ea81a80b10d041cbc",
-    "url": "/multimusic/js/recommendlist.49ec72da.js"
+    "revision": "1d1f587287225d99a203",
+    "url": "/multimusic/js/recommendlist.3daf2338.js"
   },
   {
-    "revision": "07bb11ca04c8a2cfea3a",
-    "url": "/multimusic/js/app.1e7a5b01.js"
+    "revision": "804d0a4ab81df1212630",
+    "url": "/multimusic/js/app.b5c4cb05.js"
   },
   {
     "revision": "3c2febb6ccc0dfbf04a6",
@@ -56,11 +56,11 @@ self.__precacheManifest = [
     "url": "/multimusic/img/materialdesignicons-webfont.032eb679.svg"
   },
   {
-    "revision": "018ebbdca309f0f3d6134e8f974c95e1",
+    "revision": "4d66d06f8060a424c013fef5a4d9431b",
     "url": "/multimusic/index.html"
   },
   {
-    "revision": "07bb11ca04c8a2cfea3a",
+    "revision": "804d0a4ab81df1212630",
     "url": "/multimusic/css/app.7d53bfdc.css"
   }
 ];

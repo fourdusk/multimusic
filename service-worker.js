@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/multimusic/precache-manifest.d05d83e57dc7b8c16b2087f59dd971fc.js"
+  "/multimusic/precache-manifest.64000e7b1d7769af62c90f75ce482476.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "multimusci"});
