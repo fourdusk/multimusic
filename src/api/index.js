@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = 'http://121.41.18.59/:3000/'
+const baseURL = 'http://121.41.18.59:3000/'
 export default {
   netease: {
     async getRecommendList(page, pagesize) {
